@@ -36,6 +36,7 @@ LIBFT_SRC = putchar \
 			memalloc \
 			strlen \
 			strfind \
+			strdel \
 			strdup \
 			strcpy \
 			strcut \
