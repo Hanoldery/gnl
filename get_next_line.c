@@ -6,7 +6,7 @@
 /*   By: pgerbaud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/19 13:52:59 by pgerbaud          #+#    #+#             */
-/*   Updated: 2017/12/19 20:22:56 by pgerbaud         ###   ########.fr       */
+/*   Updated: 2018/01/05 16:00:50 by pgerbaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int		fill_tmp(char **tmp, const int fd)
 	int		r;
 	int		i;
 	int		j;
-	char			buff[BUFF_SIZE];
+	char	buff[BUFF_SIZE + 1];
 
 	first = 0;
 	j = 0;
@@ -40,7 +40,6 @@ int		fill_tmp(char **tmp, const int fd)
 		return (-1);
 	return (1);
 }
-
 
 int		get_next_line(const int fd, char **line)
 {
